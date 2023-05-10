@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 extension UIFont {
-    
+    public init() {
+    }
     class func kanitBlack(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .black, isItalic: false)
     }

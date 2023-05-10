@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 extension UIColor {
+    public init() {
+    }
     static let ulifePurple = UIColor(named: "UlifePurple") ?? .purple
     static let lemonGreen = UIColor(named: "LemonGreen") ?? .black
     static let blackText = UIColor(named: "BlackText") ?? .black
