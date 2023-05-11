@@ -9,77 +9,76 @@ import Foundation
 import UIKit
 
 extension UIFont {
-    public init() {
-    }
-    class func kanitBlack(ofSize size: CGFloat) -> UIFont {
+
+    public class func kanitBlack(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .black, isItalic: false)
     }
     
-    class func kanitBlackItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitBlackItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .black, isItalic: true)
     }
     
-    class func kanitBold(ofSize size: CGFloat) -> UIFont {
+    public class func kanitBold(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .bold, isItalic: false)
     }
     
-    class func kanitBoldItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitBoldItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .bold, isItalic: true)
     }
     
-    class func kanitExtraBold(ofSize size: CGFloat) -> UIFont {
+    public class func kanitExtraBold(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .heavy, isItalic: false)
     }
     
-    class func kanitExtraBoldItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitExtraBoldItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .heavy, isItalic: true)
     }
     
-    class func kanitExtraLight(ofSize size: CGFloat) -> UIFont {
+    public class func kanitExtraLight(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .ultraLight, isItalic: false)
     }
     
-    class func kanitExtraLightItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitExtraLightItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .ultraLight, isItalic: true)
     }
     
-    class func kanitItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .regular, isItalic: true)
     }
     
-    class func kanitLight(ofSize size: CGFloat) -> UIFont {
+    public class func kanitLight(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .light, isItalic: false)
     }
     
-    class func kanitLightItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitLightItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .light, isItalic: true)
     }
     
-    class func kanitMedium(ofSize size: CGFloat) -> UIFont {
+    public class func kanitMedium(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .medium, isItalic: false)
     }
     
-    class func kanitMediumItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitMediumItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .medium, isItalic: true)
     }
     
-    class func kanitRegular(ofSize size: CGFloat) -> UIFont {
+    public class func kanitRegular(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .regular, isItalic: false)
     }
     
-    class func kanitSemiBold(ofSize size: CGFloat) -> UIFont {
+    public class func kanitSemiBold(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .semibold, isItalic: false)
     }
     
-    class func kanitSemiBoldItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitSemiBoldItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .semibold, isItalic: true)
     }
     
-    class func kanitThin(ofSize size: CGFloat) -> UIFont {
+    public class func kanitThin(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .thin, isItalic: false)
     }
     
-    class func kanitThinItalic(ofSize size: CGFloat) -> UIFont {
+    public class func kanitThinItalic(ofSize size: CGFloat) -> UIFont {
         return kanit(ofSize: size, weight: .thin, isItalic: true)
     }
 

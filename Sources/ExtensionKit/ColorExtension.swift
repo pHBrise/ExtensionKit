@@ -9,14 +9,13 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    public init() {
-    }
-    static let ulifePurple = UIColor(named: "UlifePurple") ?? .purple
-    static let lemonGreen = UIColor(named: "LemonGreen") ?? .black
-    static let blackText = UIColor(named: "BlackText") ?? .black
-    static let greyText = UIColor(named: "GreyText") ?? .black
-    static let redText = UIColor(named: "RedText") ?? .red
-    static let yellowStar = UIColor(named: "YellowStar") ?? .yellow
-    static let defaultBackgroundColor = UIColor(named: "DefaultBackgroundColor") ?? .lightGray
+    public static let ulifePurple = UIColor(named: "UlifePurple") ?? .purple
+    public static let lemonGreen = UIColor(named: "LemonGreen") ?? .black
+    public static let blackText = UIColor(named: "BlackText") ?? .black
+    public static let greyText = UIColor(named: "GreyText") ?? .black
+    public static let redText = UIColor(named: "RedText") ?? .red
+    public static let yellowStar = UIColor(named: "YellowStar") ?? .yellow
+    public static let defaultBackgroundColor = UIColor(named: "DefaultBackgroundColor") ?? .lightGray
 
 }
+

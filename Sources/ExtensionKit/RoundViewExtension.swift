@@ -70,9 +70,9 @@ import UIKit
     }
 }
 
-@IBDesignable class RoundedView: UIView {
+@IBDesignable public class RoundedView: UIView {
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         if shadow {
             applyShadow()
@@ -81,7 +81,7 @@ import UIKit
         applyCornerRadius()
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         if shadow {
             applyShadow()
@@ -147,7 +147,7 @@ import UIKit
             layer.borderWidth = CGFloat(borderWidth)
         }
     }
-    override class func prepareForInterfaceBuilder() {
+    public override class func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
     }
 }
