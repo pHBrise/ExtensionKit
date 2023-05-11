@@ -11,7 +11,7 @@ import Foundation
 
 extension UIApplication {
     
-    static func topViewController(base: UIViewController? = UIApplication.shared.delegate?.window??.rootViewController) -> UIViewController {
+    public static func topViewController(base: UIViewController? = UIApplication.shared.delegate?.window??.rootViewController) -> UIViewController {
         var root = base
         if root == nil {
             root = UIApplication.shared.currentUIWindow()?.rootViewController
@@ -28,7 +28,7 @@ extension UIApplication {
         return root ?? UIViewController()
     }
     
-    static func rootViewController(base: UIViewController? = UIApplication.shared.delegate?.window??.rootViewController) -> UIViewController {
+    public static func rootViewController(base: UIViewController? = UIApplication.shared.delegate?.window??.rootViewController) -> UIViewController {
         
         guard let viewController = UIApplication.shared.currentUIWindow()?.rootViewController else {
             return  UIViewController()
@@ -36,7 +36,7 @@ extension UIApplication {
         return viewController
     }
     
-    static func viewControllerAlert(base: UIViewController? = UIApplication.shared.delegate?.window??.rootViewController) -> UIViewController {
+    public static func viewControllerAlert(base: UIViewController? = UIApplication.shared.delegate?.window??.rootViewController) -> UIViewController {
         let top = UIApplication.topViewController()
         if top.tabBarController == nil {
             return top
@@ -44,21 +44,21 @@ extension UIApplication {
         return UIApplication.rootViewController()
     }
     
-    static func applicationVersion() -> String? {
+    public static func applicationVersion() -> String? {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
     }
 
-    static func applicationBuild() -> String? {
+    public static func applicationBuild() -> String? {
         return Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as? String
     }
     
-    static func versionBuild() -> String {
+    public static func versionBuild() -> String {
         let version = self.applicationVersion()
         let build = self.applicationBuild()
         return "v.\(version ?? "Unknow")(\(build ?? ""))"
     }
     
-    func currentUIWindow() -> UIWindow? {
+    public func currentUIWindow() -> UIWindow? {
         let connectedScenes = UIApplication.shared.connectedScenes
             .filter { $0.activationState == .foregroundActive }
             .compactMap { $0 as? UIWindowScene }

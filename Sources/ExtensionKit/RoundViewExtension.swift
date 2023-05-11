@@ -20,32 +20,32 @@ import UIKit
         applyCornerRadius()
     }
     
-    @IBInspectable var circular: Bool = false {
+    @IBInspectable open var circular: Bool = false {
         didSet {
             rounded = true
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var rounded: Bool = false {
+    @IBInspectable open var rounded: Bool = false {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat = 0.1 {
+    @IBInspectable open var cornerRadius: CGFloat = 0.1 {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var borderColor : UIColor = UIColor.clear {
+    @IBInspectable open var borderColor : UIColor = UIColor.clear {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var borderWidth : Double = 0 {
+    @IBInspectable open var borderWidth : Double = 0 {
         didSet {
             applyCornerRadius()
         }
@@ -91,38 +91,38 @@ import UIKit
         
     }
     
-    @IBInspectable var circular: Bool = false {
+    @IBInspectable open var circular: Bool = false {
         didSet {
             rounded = true
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var rounded: Bool = false {
+    @IBInspectable open var rounded: Bool = false {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat = 0.1 {
+    @IBInspectable open var cornerRadius: CGFloat = 0.1 {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var borderColor : UIColor = UIColor.clear {
+    @IBInspectable open var borderColor : UIColor = UIColor.clear {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var borderWidth : Double = 0 {
+    @IBInspectable open var borderWidth : Double = 0 {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var shadow : Bool = false {
+    @IBInspectable open var shadow : Bool = false {
         didSet {
             if shadow {
                 applyShadow()
@@ -164,38 +164,38 @@ import UIKit
         applyCornerRadius()
     }
     
-    @IBInspectable var circular: Bool = false {
+    @IBInspectable open var circular: Bool = false {
         didSet {
             rounded = true
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var rounded: Bool = false {
+    @IBInspectable open var rounded: Bool = false {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat = 0.1 {
+    @IBInspectable open var cornerRadius: CGFloat = 0.1 {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var borderColor : UIColor = UIColor.clear {
+    @IBInspectable open var borderColor : UIColor = UIColor.clear {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var borderWidth : Double = 0 {
+    @IBInspectable open var borderWidth : Double = 0 {
         didSet {
             applyCornerRadius()
         }
     }
     
-    @IBInspectable var tintImage: UIColor = .white {
+    @IBInspectable open var tintImage: UIColor = .white {
         didSet {
             setImage(imageView?.image?.withTintColor(tintImage), for: .normal)
         }
@@ -225,7 +225,7 @@ import UIKit
 
 @IBDesignable open class RoundedLabel: UILabel {
     @IBInspectable
-    public var cornerRadius: CGFloat {
+    open var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -236,7 +236,7 @@ import UIKit
     }
     
     @IBInspectable
-    public var borderWidth: CGFloat {
+    open var borderWidth: CGFloat {
         get {
             return self.layer.borderWidth
         }
@@ -248,7 +248,7 @@ import UIKit
     }
     
     @IBInspectable
-    public var borderColor: UIColor? {
+    open var borderColor: UIColor? {
         get {
             if let color = self.layer.borderColor {
                 return UIColor(cgColor: color)
