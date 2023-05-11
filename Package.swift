@@ -5,9 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "ExtensionKit",
+    defaultLocalization: "en",
     platforms: [.iOS(.v14)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
+//        .executable(name: "Resources", targets: ["Resources"]),
         .library(
             name: "ExtensionKit",
             targets: ["ExtensionKit"]),
@@ -21,7 +23,16 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "ExtensionKit",
-            dependencies: []),
+            dependencies: [],
+            resources: [
+                .copy("Fonts"),
+                .copy("Localize"),
+                .copy("Assets"),
+                .copy("Colors"),
+                .copy("Icons"),
+                .copy("NavigationBar"),
+                .copy("TabBarItem"),
+            ]),
         .testTarget(
             name: "ExtensionKitTests",
             dependencies: ["ExtensionKit"]),
