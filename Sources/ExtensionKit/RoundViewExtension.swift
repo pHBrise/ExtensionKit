@@ -8,14 +8,14 @@
 
 import UIKit
 
-@IBDesignable class RoundedImage: UIImageView {
+@IBDesignable open class RoundedImage: UIImageView {
     
-    override func awakeFromNib() {
+    open override func awakeFromNib() {
         super.awakeFromNib()
         applyCornerRadius()
     }
     
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         applyCornerRadius()
     }
@@ -65,7 +65,7 @@ import UIKit
         }
     }
     
-    override class func prepareForInterfaceBuilder() {
+    open override class func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
     }
 }
@@ -152,14 +152,14 @@ import UIKit
     }
 }
 
-@IBDesignable class RoundedButton: UIButton {
+@IBDesignable open class RoundedButton: UIButton {
     
-    override func awakeFromNib() {
+    open override func awakeFromNib() {
         super.awakeFromNib()
         applyCornerRadius()
     }
     
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         applyCornerRadius()
     }
@@ -213,17 +213,17 @@ import UIKit
             layer.borderWidth = CGFloat(borderWidth)
         }
     }
-    override var isEnabled: Bool {
+    open override var isEnabled: Bool {
         didSet {
             backgroundColor = isEnabled ? .defaultBackgroundColor:.lightGray
         }
     }
-    override class func prepareForInterfaceBuilder() {
+    open override class func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
     }
 }
 
-@IBDesignable class RoundedLabel: UILabel {
+@IBDesignable open class RoundedLabel: UILabel {
     @IBInspectable
     public var cornerRadius: CGFloat {
         get {
@@ -261,7 +261,7 @@ import UIKit
         }
     }
     
-    override class func prepareForInterfaceBuilder() {
+    open override class func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
     }
 }
